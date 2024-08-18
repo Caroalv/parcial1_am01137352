@@ -1,3 +1,5 @@
+/*composition*/
+
 const { createApp, ref, watchEffect } = Vue;
 
 createApp({

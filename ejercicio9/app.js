@@ -1,3 +1,5 @@
+/*composition*/
+
 const { createApp, ref, computed } = Vue;
 
 const FullNameComponent = {

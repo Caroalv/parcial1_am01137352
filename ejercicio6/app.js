@@ -1,3 +1,5 @@
+/*composition*/
+
 const { createApp, ref } = Vue;
 
 const CalculatorComponent = {
