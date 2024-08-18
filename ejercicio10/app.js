@@ -6,22 +6,22 @@ createApp({
   setup() {
     
     const variable = ref('');
-    const message = ref('');
+    const mensaje = ref('');
 
     // Watcher para detectar cambios en la variable
-    watch(variable, (newValue, oldValue) => {
-      if (newValue !== oldValue) {
-        message.value = `The variable has changed to: ${newValue}`;
+    watch(variable, (nuevovalor, oldValue) => {
+      if (nuevovalor !== oldValue) {
+        mensaje.value = `La variable cambio a: ${nuevovalor}`;
       }
     });
 
     // Retornar las propiedades para su uso en el template
-    return { variable, message };
+    return { variable, mensaje };
   },
   template: `
     <div>
-      <input v-model="variable" placeholder="Type something..." />
-      <p v-if="message">{{ message }}</p>
+      <input v-model="variable" placeholder="Escribe algo..." />
+      <p v-if="mensaje">{{ mensaje }}</p>
     </div>
   `
 }).mount('#app');
